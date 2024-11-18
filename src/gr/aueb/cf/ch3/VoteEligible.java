@@ -3,7 +3,7 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- * Δικαίωμα ψήφου σε ηλικίες>18
+ * Δικαίωμα ψήφου σε ηλικίες > 18
  * Ελέγχει αν μια ηλικία έχει δικαίωμα να ψηφίσει
  */
 public class VoteEligible {

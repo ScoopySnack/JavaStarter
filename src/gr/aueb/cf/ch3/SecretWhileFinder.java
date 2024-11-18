@@ -11,13 +11,12 @@ public class SecretWhileFinder {
         boolean isSuccess = false;
 
         do {
-
-
             System.out.println("Insert a num to guess the secret");
             num = scanner.nextInt();
 
             if (num == SECRET) {
                 System.out.println("Secret Found!!");
+                isSuccess = true;
             } else {
                 System.out.println("Try again!");
             }

@@ -3,7 +3,7 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- * calculates b^power
+ * calculates base^power
  */
 public class PowerCalculator {
 
@@ -20,6 +20,9 @@ public class PowerCalculator {
 
         while(i<=power){
             result *= base;
-            i++;}
+            i++;
+        }
+
+        System.out.println("Result: " + result);
     }
 }
