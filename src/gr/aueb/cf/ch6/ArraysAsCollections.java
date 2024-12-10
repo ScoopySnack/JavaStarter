@@ -96,4 +96,34 @@ public class ArraysAsCollections {
         }
         return count >= 1 ;
     }
+
+    public static boolean moreThanTwoWithTheSameEnding(int[] arr){
+        int[] endings = new int[10];
+        boolean isSameEnding = false;
+
+        for (int num : arr){
+            endings[num % 10]++;
+        }
+
+        for (int count : endings){
+            if (count >= 3){
+                isSameEnding = true;
+                break;
+            }
+        }
+
+        return isSameEnding;
+    }
+
+    public static boolean allAreEven(int[] arr){
+//        return getEvens(arr).length == arr.length;
+
+        boolean allEven = false;
+        int count = 0;
+
+        for (int el : arr){
+            if (el % 2 == 0) count++;
+        }
+        return count == arr.length;
+    }
 }
