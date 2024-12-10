@@ -3,7 +3,12 @@ package gr.aueb.cf.ch6;
 public class SelectionSort {
 
     public static void main(String[] args) {
+        int[] arr = {6, 3,7,4};
+        int[] sorted = selectionSort(arr);
 
+        for (int el : sorted){
+            System.out.println(el + " ");
+        }
     }
 
     public static int[] selectionSort(int[] arr){

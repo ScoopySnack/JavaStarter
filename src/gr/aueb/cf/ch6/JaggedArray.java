@@ -1,5 +1,8 @@
 package gr.aueb.cf.ch6;
 
+/**
+ * n x n array demo
+ */
 public class JaggedArray {
 
     public static void main(String[] args) {
