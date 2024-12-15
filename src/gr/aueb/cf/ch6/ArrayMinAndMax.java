@@ -1,5 +1,8 @@
 package gr.aueb.cf.ch6;
 
+/**
+ * Finds the min and max of an array.
+ */
 public class ArrayMinAndMax {
 
     public static void main(String[] args) {

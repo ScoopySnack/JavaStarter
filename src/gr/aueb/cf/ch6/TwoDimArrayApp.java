@@ -11,14 +11,14 @@ public class TwoDimArrayApp {
         grid[0][1] = 7;
         grid[0][2] = 10;
         grid[1][0] = 2;
-        grid[2][0] = 6;
-        grid[3][0] = 8;
+        grid[1][1] = 6;
+        grid[1][2] = 8;
 
 
         //traverse
         for (int[] row : grid) {
-            for (int i : row) {
-                System.out.print(i);
+            for (int el : row) {
+                System.out.print(el);
             }
         }
 
