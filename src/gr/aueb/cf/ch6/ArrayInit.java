@@ -1,5 +1,7 @@
 package gr.aueb.cf.ch6;
 
+import java.util.Arrays;
+
 /**
  * Δήλωση και αρχικοποίηση ενός πίνακα.
  * populate ένα πίνακα
@@ -23,10 +25,11 @@ public class ArrayInit {
         arr[2] = 4;
 
         //traverse(διάσχιση)
-        for (int i = 0; i <= arr.length; i++) {
+        for (int i = 0; i <= arr.length - 1; i++) {
             System.out.print(arr[i] + " ");
         }
 
+        System.out.println(Arrays.toString(arr2));
 
         //print with enhanced for:
         for (int el : arr3){

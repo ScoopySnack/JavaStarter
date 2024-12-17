@@ -1,6 +1,6 @@
 package gr.aueb.cf.ch6;
 
-public class StackDemo {
+public class MyStack {
 
     static  int[] stack = new int[50];
     static int top = -1;
