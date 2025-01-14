@@ -30,8 +30,7 @@ public class ExceptionTypes {
      * in method signature. And the exception not propagates.
      * Is it a good practice, not to propagate?
      * It depends. If there is caller, then we have to propagate.
-     * If there is a client/user then we do not propagate the exception
-     * @return
+     * If there is a client/user then we do not propagate the exception.
      */
     public static char readAnotherChar(){
         try {
@@ -47,8 +46,9 @@ public class ExceptionTypes {
      * In this type of method/exception, we take
      * action -- logging, and also rethrow the exception to
      * propagate to the caller.3w
+     *
      * @return
-     * @throws IOException
+     * @throws  IOException
      */
     public static char readAnotherOneChar() throws IOException {
         try {

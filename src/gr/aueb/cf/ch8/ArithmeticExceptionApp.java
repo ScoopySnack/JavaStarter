@@ -11,14 +11,21 @@ public class ArithmeticExceptionApp {
         int result = 0;
 
         while(true){
-            System.out.println("Please insert a numerator and denominator");
-            numerator = in.nextInt();
-            if (numerator == 0) break;
+            try {
+                System.out.println("Please insert a numerator and denominator");
+                numerator = in.nextInt();
+                if (numerator == 0) break;
 
-            denominator = in.nextInt();
-            result = numerator /denominator;
+                denominator = in.nextInt();
+                result = numerator / denominator;
 
-            System.out.printf("%d / %d = %d", numerator, denominator, result);
+                System.out.printf("%d / %d = %d\n", numerator, denominator, result);
+
+            }catch (ArithmeticException e){
+                System.err.println("Error. Denominator must not be zero");
+            }
         }
+
+        System.out.println("Thanks for using the app.");
     }
 }
