@@ -30,6 +30,12 @@ public class JuliusCesarCipherAlgorithm {
         return encrypted.toString();
     }
 
+    /**
+     * Αποκρυπτογραφεί ένα κρυπτογραφημένο κείμενο
+     * @param s το κρυπτογραφημένο κείμενο
+     * @param key το κλειδί
+     * @return το αποκρυπτογραφημένο κείμενο
+     */
     public static String decrypt(String s, int key){
         StringBuilder decrypted = new StringBuilder();
         char ch;

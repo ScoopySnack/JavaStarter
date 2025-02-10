@@ -3,6 +3,9 @@ package gr.aueb.cf.ch10;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * Calculator class that performs basic arithmetic operations.
+ */
 public class Calculator {
 
     public static void main(String[] args) {
@@ -21,7 +24,7 @@ public class Calculator {
 
             System.out.println("Sum: " + result);
         } catch (InputMismatchException e) {
-            System.out.println("Η είσοδος πρέπει να είναι ακέραιοι.");
+            System.out.println("Η είσοδος πρέπει να είναι ακέραιοι."); //
         } catch (Exception e) {
             System.out.println("Λάθος κατά τον υπολογισμό. Δεν μπορεί να γίνει διαίρεση με το μηδέν.");
         }
@@ -41,7 +44,7 @@ public class Calculator {
 
     public static int div(int a, int b) throws Exception {
         try {
-            if (b == 0) throw new Exception("Error. Denominator must not be zero");
+            if (b == 0) throw new Exception("Denominator must not be zero"); //Error description
             return a / b;
         } catch (Exception e) {
             System.err.println("Error. " + e.getMessage());
@@ -51,10 +54,10 @@ public class Calculator {
 
     public static int mod(int a, int b) throws Exception {
         try {
-            if (b == 0) throw new Exception("Error. Denominator must not be zero");
+            if (b == 0) throw new Exception("Denominator must not be zero");
             return a % b;
         } catch (Exception e) {
-            System.err.println("Error. " + e.getMessage());
+            System.err.println("Error. " + e.getMessage()); //e.getMessage() is used to get the error message
             throw e;
         }
     }

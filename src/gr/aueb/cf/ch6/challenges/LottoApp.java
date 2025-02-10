@@ -1,4 +1,4 @@
-package gr.aueb.cf.solutions.ch6;
+package gr.aueb.cf.ch6.challenges;
 
 import java.io.File;
 import java.io.IOException;

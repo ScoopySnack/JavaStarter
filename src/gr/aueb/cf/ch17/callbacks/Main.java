@@ -19,7 +19,9 @@ public class Main {
         });
     }
 
+
     public static void doPrint(Printable printable){
         printable.print();
+
     }
 }
