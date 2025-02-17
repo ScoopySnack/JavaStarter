@@ -4,14 +4,16 @@ package gr.aueb.cf.ch12.model;
  * POJO -Java Bean
  */
 public class Teacher {
-    private int id;
+    private int id;  //πεδία
     private String firstname;
     private String lastname;
 
+    // Default constructor
     public Teacher(){
 
     }
 
+    // Overloaded constructor
     public Teacher(int id, String firstname, String lastname) {
         this.id = id;
         this.firstname = firstname;
