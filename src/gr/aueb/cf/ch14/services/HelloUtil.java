@@ -4,6 +4,7 @@ public class HelloUtil {
 
     /**
      * No instances of this class should be available.
+     * This is a utility class.
      */
     private HelloUtil(){
 
