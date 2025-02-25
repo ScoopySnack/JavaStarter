@@ -28,14 +28,19 @@ public class Point2D extends Point {
         this.y = y;
     }
 
-    /**
-     * Επιστρέφει το σημείο σε μορφή string, override της μεθόδου pointToString της Point
-     * @return  Το σημείο σε μορφή string
-     */
     @Override
-    public String pointToString() {
-        return super.pointToString() + "(" + y + ")";
+    public String toString() {
+        return super.toString() + "(" + y + ")";
     }
+
+    //    /**
+//     * Επιστρέφει το σημείο σε μορφή string, override της μεθόδου pointToString της Point
+//     * @return  Το σημείο σε μορφή string
+//     */
+//    @Override
+//    public String pointToString() {
+//        return super.pointToString() + "(" + y + ")";
+//    }
 
     // Liskov substitution principle
     @Override

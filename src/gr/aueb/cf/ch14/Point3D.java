@@ -26,10 +26,15 @@ public class Point3D extends Point2D {
     }
 
     @Override
-    public String pointToString() {
-       // return super.pointToString() + "(" + z + ")";
+    public String toString() {
         return "(" + getX() + ", " + getY() + ", " + z + ")";
     }
+
+    //    @Override
+//    public String pointToString() {
+//       // return super.pointToString() + "(" + z + ")";
+//        return "(" + getX() + ", " + getY() + ", " + z + ")";
+//    }
 
     @Override
     public void movePlus10() {
