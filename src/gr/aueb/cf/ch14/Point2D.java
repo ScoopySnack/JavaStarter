@@ -4,16 +4,22 @@ public class Point2D extends Point {
     private double y;
 
     public Point2D() {
-        // super();    // Ως 1η εντολή καλεί τον default constructor της Point
+        // super();   // Ως 1η εντολή καλεί τον default constructor της Point, ακόμα και αν δεν το καλέσουμε εμείς
         // y = 0;
     }
 
+    /**
+     * Καλεί τον overloaded constructor της Point
+     * @param x  Η τιμή του x
+     * @param y  Η τιμή του y
+     */
     public Point2D(double x, double y) {
         super(x);   // Καλεί τον overloaded constructor της Point
         // setX(x);
         this.y = y;
     }
 
+    //Getters και Setters
     public double getY() {
         return y;
     }
@@ -22,6 +28,10 @@ public class Point2D extends Point {
         this.y = y;
     }
 
+    /**
+     * Επιστρέφει το σημείο σε μορφή string, override της μεθόδου pointToString της Point
+     * @return  Το σημείο σε μορφή string
+     */
     @Override
     public String pointToString() {
         return super.pointToString() + "(" + y + ")";

@@ -8,9 +8,12 @@ public class CodingFactorySingleton {
 
     }
 
+    //Static factory method, returns the instance of the singleton. If getInstance() is called multiple times,
+    // the same instance is returned. Also is a singleton because the constructor is private and the instance is static.
     public static CodingFactorySingleton getInstance(){
         return INSTANCE;
     }
+
 
     public void sayHello(){
         System.out.println("Hello");

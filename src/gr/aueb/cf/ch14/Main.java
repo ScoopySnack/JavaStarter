@@ -22,10 +22,11 @@ public class Main {
         Point p1 = Point.getInstance();
         Point p2 = Point.getRandomPoint();
 
-        CodingFactorySingleton cf1 = CodingFactorySingleton.getInstance();
+        CodingFactorySingleton cf1;
+        cf1 = CodingFactorySingleton.getInstance();
         CodingFactorySingleton cf2 = CodingFactorySingleton.getInstance();
 
-        System.out.println(cf1);
+        System.out.println(cf1); // cf1 and cf2 are the same object
         System.out.println(cf2);
     }
 

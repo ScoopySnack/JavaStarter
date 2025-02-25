@@ -1,10 +1,14 @@
 package gr.aueb.cf.ch14;
 
+/**
+ * Inheritance example. Point3D extends Point2D. And Point2D extends Point.
+ * Point is a superclass of Point2D and Point2D is a superclass of Point3D.
+ */
 public class Point3D extends Point2D {
     private double z;
 
     public Point3D() {
-//        super();    // constructor chaining
+//        super();    // constructor chaining, super() is called implicitly
 //        z = 0;
     }
 
