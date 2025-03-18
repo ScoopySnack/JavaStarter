@@ -3,7 +3,7 @@ package gr.aueb.cf.ch16.interfaces;
 import gr.aueb.cf.ch16.interfaces.model.Customer;
 
 public class CustomerServiceImpl {
-    private ICustomerDAO iCustomerDAO;
+    private final ICustomerDAO iCustomerDAO;
 
     public CustomerServiceImpl (ICustomerDAO iCustomerDAO){
         this.iCustomerDAO = iCustomerDAO;
