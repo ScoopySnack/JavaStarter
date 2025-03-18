@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch16.function;
+package gr.aueb.cf.ch16.functional;
 
 public class Main {
 
@@ -17,7 +17,7 @@ public class Main {
         int result2 = sub.operate(10,6);
         System.out.println(result2);
 
-        ICalculator mul = (a, b) -> a*b;
+        ICalculator mul = (a, b) -> a*b; // Lambda expression
         int result3 = mul.operate(3,7);
         System.out.println(result3);
     }

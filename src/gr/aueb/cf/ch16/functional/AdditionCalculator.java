@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch16.function;
+package gr.aueb.cf.ch16.functional;
 
 public class AdditionCalculator implements ICalculator{
 
