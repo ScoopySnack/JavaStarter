@@ -1,5 +1,8 @@
 package gr.aueb.cf.ch17.builder;
 
+/**
+ * Builder pattern for Book class
+ */
 public class Book {
     private final long id;
     private final String isbn;
