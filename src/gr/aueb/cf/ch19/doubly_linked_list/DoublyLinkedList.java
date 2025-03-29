@@ -1,5 +1,9 @@
 package gr.aueb.cf.ch19.doubly_linked_list;
 
+/**
+ * A doubly linked list implementation.
+ * @param <T> the type of the elements in the list
+ */
 public class DoublyLinkedList<T> {
 
     private Node<T> head = null;
