@@ -27,7 +27,7 @@ public class DoublyLinkedList<T> {
 
     /**
      * Time-complexity O(1)
-     * @param t
+     * @param t  the value to be inserted
      */
     public void insertLast(T t) {
         if (head == null) {
@@ -42,5 +42,72 @@ public class DoublyLinkedList<T> {
 
         tail.setNext(tmp);
         tail = tmp;
+    }
+
+    /**
+     * Time-complexity O(1)
+     * @return the last node of the list
+     */
+    public Node<T> removeFirst() {
+        Node<T> nodeToReturn;
+
+        if (isEmpty()) return null;
+
+        nodeToReturn = head;
+        if (head.getNext() == null) tail = null;
+        head = head.getNext();
+        head.setPrev(null);
+        return nodeToReturn;
+    }
+
+    /**
+     * Time-complexity O(1)
+     * @return the last node of the list
+     */
+    public Node<T> removeLast() {
+        Node<T> nodeToReturn;
+
+        if(isEmpty() || head.getNext() == null) {
+            return removeFirst(); //if there is only one node in the list we remove it
+        }
+        nodeToReturn = tail; //tail is the last node which we want to remove
+        tail = tail.getPrev(); //we set the tail to the previous node
+        tail.setNext(null); //we set the next of the new tail to null
+        return nodeToReturn;
+    }
+
+    public Node<T> get(T t) {
+        Node<T> nodeToReturn = null;
+        for (Node<T> n = head; n != null; n = n.getNext()) {
+            if (n.getItem().equals(t)) {
+                nodeToReturn = n;
+                break;
+            }
+        }
+
+        return nodeToReturn;
+    }
+
+    public void traverse() {
+        for (Node<T> n = head; n != null; n = n.getNext()) {
+            System.out.println(n.getItem());
+        }
+        System.out.println();
+    }
+
+    /**
+     * Time-complexity O(n)
+     * Traverses the list in reverse order.
+     * This method starts from the tail and goes to the head.
+     */
+    public void traverseReverse() {
+        for (Node<T> n = tail; n != null; n = n.getPrev()) {
+            System.out.println(n.getItem());
+        }
+        System.out.println();
+    }
+
+    public boolean isEmpty() {
+        return head == null;
     }
 }
