@@ -27,7 +27,7 @@ public class RegExMain {
      * είναι το "red"
      */
     public static boolean isRed(String s) {
-        return s.matches("red");
+        return (s!= null) && (s.matches("red"));
     }
 
     /**

@@ -1,0 +1,21 @@
+package gr.aueb.cf.ch20_enums_lambdas_regex.regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class NonCapturingRegEx {
+
+    public static void main(String[] args) {
+        String s = "HelloWorld HelloWorld";
+
+        Pattern pattern = Pattern.compile("(Hello)(?:World)"); //?: δεν καταναλώνει την ομάδα
+        Matcher matcher = pattern.matcher(s);
+
+        while (matcher.find()) {
+            for (int i = 1; i <= matcher.groupCount(); i++) {
+                System.out.print(matcher.group(i) + " ");
+            }
+            System.out.println();
+        }
+    }
+}
